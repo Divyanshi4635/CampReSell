@@ -1,6 +1,6 @@
-## BuyAndSell — Android App
+## CampReSell — Android App
 
-BuyAndSell is an Android application for listing items for sale and discovering items to buy. This repository contains the Android app source built with Android Studio and Gradle.
+CampReSell is an Android application for listing items for sale and discovering items to buy. This repository contains the Android app source built with Android Studio and Gradle.
 
 ### Key Features
 - Browse and search listings
@@ -34,13 +34,13 @@ BuyAndSell is an Android application for listing items for sale and discovering 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/BuyAndSell.git
-cd BuyAndSell
+git clone https://github.com/<your-username>/CampReSell.git
+cd CampReSell
 ```
 
 ### Open in Android Studio
 1. Open Android Studio.
-2. Choose “Open an Existing Project” and select the `BuyAndSell` directory.
+2. Choose “Open an Existing Project” and select the `CampReSell` directory.
 3. Let Gradle sync complete.
 
 ### Build from Command Line
@@ -66,7 +66,7 @@ Artifacts are generated under:
 
 High-level layout (simplified):
 ```
-BuyAndSell/
+CampReSell/
 ├─ app/
 │  ├─ src/
 │  │  ├─ main/

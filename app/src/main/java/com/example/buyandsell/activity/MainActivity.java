@@ -156,7 +156,7 @@ public class MainActivity extends FragmentActivity {
         developerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Developer: BuyAndSell Team\nVersion: 1.0.0\nBuild: 2024", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Developer: CampReSell Team\nVersion: 1.0.0\nBuild: 2024", Toast.LENGTH_LONG).show();
             }
         });
     }

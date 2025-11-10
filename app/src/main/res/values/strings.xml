@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bid and Get</string>
+    <string name="app_name">CampReSell</string>
     <string name="welcome_message">Welcome to Bid and Get</string>
     <string name="search_hint">Search products...</string>
     <string name="search_button">Search</string>
