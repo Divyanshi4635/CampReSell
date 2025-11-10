@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CampReSell</string>
-    <string name="welcome_message">Welcome to Bid and Get</string>
+    <string name="welcome_message">Welcome to CampReSell</string>
     <string name="search_hint">Search products...</string>
     <string name="search_button">Search</string>
     <string name="home">Home</string>
@@ -14,7 +14,7 @@
     <string name="ongoing_bids">Ongoing Bids</string>
     <string name="not_found">NOT FOUND</string>
     <string name="welcome_user">WELCOME, USER</string>
-    <string name="bid_and_get">Bid and Get</string>
+    <string name="bid_and_get">CampReSell</string>
     <string name="todays_activity">TODAY\'S ACTIVITY</string>
     <string name="previous_bids">PREVIOUS BIDS</string>
     <string name="your_goals">Your Goals</string>
