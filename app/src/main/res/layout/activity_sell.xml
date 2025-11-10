@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell Product"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Product Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Title *"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product title"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Description * (max 500 words)"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_product_description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Enter product description"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_desc_word_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/500 words"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Buying Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buying Date"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/et_buying_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Select buying date"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <Button
+                android:id="@+id/btn_select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendar" />
+        </LinearLayout>
+
+        <!-- Used By Years -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used By (Years) *"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_used_years"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter years of use"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Invoice Upload -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Invoice (PDF, max 1MB)"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_invoice_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No invoice uploaded"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btn_upload_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload" />
+        </LinearLayout>
+
+        <!-- Damages -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Damages (if any)"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_damages"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Describe any damages or issues"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Product Images Upload -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Images * (JPG/PNG, max 50KB each)"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btn_upload_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Images" />
+
+            <TextView
+                android:id="@+id/tv_images_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0 images uploaded"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Image Preview RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <!-- Pickup and Delivery Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup &amp; Delivery Address *"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_add_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add New Address"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Payment Method -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method *"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

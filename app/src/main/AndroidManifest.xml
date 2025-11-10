@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.BuyAndSell">
+
+        <activity 
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity 
+            android:name=".activity.CategoryActivity"
+            android:exported="false" />
+        <activity 
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity 
+            android:name=".activity.SellActivity"
+            android:exported="false" />
+        <activity 
+            android:name=".activity.SettingsActivity"
+            android:exported="false" />
+        <activity 
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.SignupActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.ManageProductsActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.ProductReviewActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.RegisteredUsersActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.ProductDetailsActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.ManageBidsActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.BidManagementActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".activity.NotificationsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
